@@ -1,0 +1,39 @@
+# Arquivo .gitignore para Node.js / Express
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de ambiente - MUITO IMPORTANTE
+# Este arquivo contém suas chaves de API e outros segredos.
+# NUNCA deve ser enviado para o repositório.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Pasta de dependências (essencial ignorar)
+node_modules/
+
+# Pasta de build (caso você use TypeScript ou um bundler)
+dist/
+build/
+
+# Arquivos do Editor/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de cache de testes
+/coverage
