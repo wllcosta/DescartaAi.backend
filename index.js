@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = require("./src/app");
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 app.use(
   cors({
@@ -12,6 +12,6 @@ app.use(
   })
 );
 
-app.listen(port, () => {
-  console.log(`Servidor DescartAI rodando em http://localhost:${port}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Servidor DescartAI rodando na porta ${PORT}`);
 });
